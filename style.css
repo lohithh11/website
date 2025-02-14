@@ -1,0 +1,104 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background: url('https://images.unsplash.com/photo-1495046370729-fa5e793723e7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed; /* Updated background image URL */
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  backdrop-filter: blur(5px); /* Updated to use proper backdrop-filter */
+}
+
+
+/* Container for text and button */
+.container {
+  background-color: rgba(0, 0, 0, 0.6); /* Darker background for text readability */
+  padding: 30px 50px; /* Adjusted padding */
+  border-radius: 20px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  max-width: 500px; /* Limit the container width */
+  width: 100%;
+}
+
+h1 {
+  font-size: 1.8em;  /* Smaller font size */
+  font-weight: 600;
+  white-space: nowrap; /* Keeps the text on a single line */
+  color: #fff;
+  margin-bottom: 15px; /* Adjusted margin */
+  letter-spacing: 1px;
+  text-overflow: ellipsis; /* Adds '...' if the text overflows */
+  max-width: 100%; /* Ensures the heading fits within its container */
+  width: auto; /* Allow the width to auto-adjust */
+  text-align: left; /* Aligns text slightly to the left */
+  padding-left: 10px; /* Optional: adds extra space to the left */
+}
+
+
+
+
+p {
+  font-size: 1.1em; /* Smaller font size */
+  margin-bottom: 20px; /* Adjusted margin */
+  color: #ddd;
+}
+
+.emoji {
+  font-size: 1.3em; /* Slightly smaller emoji */
+}
+
+/* Link (Button) Styles */
+a {
+  position: relative;
+  padding: 15px 35px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.2em; /* Smaller font size for button */
+  letter-spacing: 2px;
+  font-weight: 600;
+  background-color: #0077b5;
+  border-radius: 50px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover & Active States */
+a:hover {
+  background-color: #61e00c;
+  color: white;
+  transform: scale(1.1);
+}
+
+a:active {
+  background-color: #4CAF50;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.5em; /* Adjust font size for smaller screens */
+  }
+
+  p {
+    font-size: 1em; /* Adjust font size for smaller screens */
+  }
+
+  .container {
+    padding: 20px; /* Less padding for smaller screens */
+  }
+
+  a {
+    font-size: 1em; /* Adjust button font size */
+    padding: 12px 30px; /* Smaller button for small screens */
+  }
+}
